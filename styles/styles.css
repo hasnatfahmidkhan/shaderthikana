@@ -1,0 +1,112 @@
+
+
+.c-item {
+  height: 520px;
+}
+
+.c-item h2,
+.c-item p,
+.drp-link {
+  color: #fff !important;
+}
+
+.logo {
+  color: #dddddd !important;
+  text-transform: uppercase;
+}
+.navbar-scrolled {
+  background-color: #2e2e2e80 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.drp-link {
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  opacity: 1 !important;
+}
+.custom-hover {
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.custom-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ff5722; /* underline color */
+  transition: width 0.3s ease;
+}
+
+.custom-hover:hover::after {
+  width: 100%;
+}
+
+.custom-dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* fixes gap issue */
+}
+
+/* Optional: smooth dropdown animation */
+.dropdown-menu {
+  transition: all 0.3s ease;
+}
+
+.hambarger {
+  border: 2px solid #ff5722 !important;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /* makes it round */
+  background-color: #fff !important; /* dot color */
+  opacity: 1;
+  transition: opacity 0.5s;
+  margin: 0 5px; /* spacing between dots */
+}
+
+.carousel-indicators .active {
+  background-color: #ff5722 !important; /* active dot color */
+}
+
+.button-sty {
+  background: #ff5722;
+  color: #ffff;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  font-weight: 700;
+}
+
+.button-sty:hover {
+  margin: 1rem;
+  /* padding: 0; */
+  background: none;
+  border: 2px solid #ff5722;
+  color: #ff5722;
+}
+
+.menu-card {
+  background-image: url("caro1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+footer {
+  background-color: #444343;
+  transition: all 0.5s ease;
+}
+footer .social-icon:hover,
+.copy-right:hover {
+  color: #ff5722 !important;
+}
