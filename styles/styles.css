@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 
+
+/* all style  */
+
+
+
 /* header  */
 .logo {
   color: #dddddd !important;
@@ -110,11 +115,30 @@
 /* c-item - carousel items style  */
 
 /* about  */
+
+.about-container {
+  background: #a5a5a541;
+}
 .grid-container {
   align-items: center;
+
 }
 .about-img {
-  width: 50%;
+  width: 100%;
+  border-radius: 8px;
+ box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* aspect-ratio: 16/9; */
+}
+
+.about-heading {
+  font-family: "Playfair Display SC";
+  color: #ff5722;
+  font-weight: bold;
+}
+.about-text {
+  text-align: justify;
+  font-family: "Baloo 2";
+  font-weight: 600;
 }
 
 /* CArd  */

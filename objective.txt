@@ -1,6 +1,6 @@
 1. full width navbar -- with dropdown, logo or name done
 2. carousel effect -- 4 images same width and height, text  done
-3. about us -- text left photo right
+3. about us -- text left photo right done
 4. card -- 6 cards 2row 3 columns with photo and text done
 5. form -- text with form done
 6. Accordion -- FAQ done
