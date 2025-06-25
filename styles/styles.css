@@ -128,7 +128,7 @@
 
 @media (max-width: 576px) {
   .about-content {
-    margin: 0 !important;
+    margin: 1rem 0 !important;
   }
 }
 .about-heading {
