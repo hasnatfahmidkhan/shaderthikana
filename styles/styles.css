@@ -1,13 +1,19 @@
-
-
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 .c-item {
   height: 520px;
 }
 
 .c-item h2,
-.c-item p,
-.drp-link {
+.c-item p {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 600;
   color: #fff !important;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 .logo {
@@ -22,8 +28,9 @@
 
 .drp-link {
   font-size: 1.2rem;
+  color: #ffffff !important;
+  font-family: "Baloo 2", sans-serif;
   font-weight: 600;
-
   opacity: 1 !important;
 }
 .custom-hover {
@@ -64,7 +71,7 @@
 .c-img {
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.8);
+  filter: brightness(0.7);
 }
 
 .carousel-indicators [data-bs-target] {
@@ -90,18 +97,44 @@
 }
 
 .button-sty:hover {
-  margin: 1rem;
-  /* padding: 0; */
   background: none;
   border: 2px solid #ff5722;
   color: #ff5722;
 }
 
+.grid-container {
+  /* padding: 5rem; */
+  align-items: center;
+}
+.about-img {
+  width: 50%;
+}
 .menu-card {
   background-image: url("caro1.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
+.contact-text {
+  font-family: "Playfair Display SC";
+  color: #ff5722;
+  font-weight: bold;
+}
+
+.contact-form label,
+input::placeholder {
+  font-size: 1.3rem;
+  font-family: "Baloo 2", sans-serif;
+  color: #ff5722;
+}
+
+.form-control:focus {
+  color: #ff5722 !important;
+  background-color: #fff;
+  border: none;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(255, 87, 34, .5);
+}
+
 footer {
   background-color: #444343;
   transition: all 0.5s ease;

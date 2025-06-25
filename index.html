@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shader Thikana — A Taste of Tradition & Comfort</title>
+    <title>Shader Thikana | Taste of Authentic Food</title>
+    <meta name="description"
+        content="Shader Thikana - A restaurant serving authentic, delicious meals in a cozy setting.">
+
     <link rel="shortcut icon" href="assets/fav.png" type="image/x-icon">
 
     <!-- ===== Start: Bootstrap Cdn ===== -->
@@ -53,12 +56,12 @@
                             <a class="nav-link custom-hover drp-link" href="#faq">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-hover drp-link" href="#">Contact Us</a>
+                            <a class="nav-link custom-hover drp-link" href="#contact-us">Contact Us</a>
                         </li>
-                        <li class="nav-item dropdown custom-dropdown">
+                        <li  class="nav-item dropdown custom-dropdown">
                             <a class="nav-link dropdown-toggle drp-link" data-bs-toggle="dropdown" href="#"
-                                aria-expanded="false">Menu</a>
-                            <ul class="dropdown-menu bg-transparent border border-1">
+                                aria-expanded="false">Menu Page</a>
+                            <ul id="custom-dropdown-menu" class="dropdown-menu bg-transparent border border-1">
                                 <li><a class="dropdown-item bg-transparent custom-hover drp-link" href="#">BreakFast</a>
                                 </li>
                                 <li><a class="dropdown-item bg-transparent custom-hover drp-link" href="#">Lunch
@@ -73,66 +76,87 @@
                 <!-- Nav bar items End -->
             </div>
         </nav>
+        <!--Carousel BAnar  -->
+        <div id="hero-carousel" class="carousel carousel-dark slide carousel-z-index" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item" data-bs-interval="10000">
+                    <img src="assets/caro1.jpg" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption d-block">
+                        <p class="fs-5 text-uppercase d-none d-sm-block">Crispy, colorful, and crafted with care —
+                            experience healthy
+                            indulgence like never before.</p>
+                        <h2 class="fs-3 fw-bolder">Taste the Freshness</h2>
+                        <button class="btn button-sty px-3 my-3">Order Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item c-item" data-bs-interval="2000">
+                    <img src="assets/caro2.jpg" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption d-block">
+                        <p class="fs-5 text-uppercase d-none d-sm-block">From farm to fork — hearty meals made with love
+                            and the freshest
+                            ingredients.
+                        </p>
+                        <h2 class="fs-3 fw-bolder">Taste the Freshness</h2>
+                        <button class="btn button-sty px-3 my-3">Order Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="assets/caro3.jpeg" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption d-block">
+                        <p class="fs-5 text-uppercase d-none d-sm-block">Gather. Savor. Celebrate. Discover the warmth
+                            of real food in a
+                            cozy
+                            setting.
+                        </p>
+                        <h2 class="fs-3 fw-bolder">Welcome to Your Table</h2>
+                        <button class="btn button-sty px-3 my-3">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </header>
 
-    <!-- BAnar  -->
-    <div id="hero-carousel" class="carousel carousel-dark slide carousel-z-index" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active c-item" data-bs-interval="10000">
-                <img src="assets/caro1.jpg" class="d-block w-100 c-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <p class="fs-5 text-uppercase">Crispy, colorful, and crafted with care — experience healthy
-                        indulgence like never before.</p>
-                    <h2 class="fs-3 fw-bolder">Taste the Freshness</h2>
-                    <button class="btn button-sty px-3 my-3">Order Now</button>
-                </div>
-            </div>
-            <div class="carousel-item c-item" data-bs-interval="2000">
-                <img src="assets/caro2.jpg" class="d-block w-100 c-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <p class="fs-5 text-uppercase">From farm to fork — hearty meals made with love and the freshest
-                        ingredients.
-                    </p>
-                    <h2 class="fs-3 fw-bolder">Taste the Freshness</h2>
-                    <button class="btn button-sty px-3 my-3">Order Now</button>
-                </div>
-            </div>
-            <div class="carousel-item c-item">
-                <img src="assets/caro3.jpeg" class="d-block w-100 c-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <p class="fs-5 text-uppercase">Gather. Savor. Celebrate. Discover the warmth of real food in a cozy
-                        setting.
-                    </p>
-                    <h2 class="fs-3 fw-bolder">Welcome to Your Table</h2>
-                    <button class="btn button-sty px-3 my-3">Order Now</button>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+
 
     <!-- About us  -->
 
-
+    <!-- <div class="container my-5 ">
+        <div class="row grid-container">
+            <div class="col-12 col-sm-6  ">
+                <img src="assets/about.jpg" alt="" class="about-img">
+            </div>
+            <div class="col-12 col-sm-6 ">
+                <h2>Welcome to Shader Thikana</h2>
+                <p>
+                    At Shader Thikana, we believe food is not just a meal — it's an emotion. Rooted in warmth and
+                    tradition, our restaurant offers a cozy environment where every cup of tea and every plate served
+                    carries the touch of home. Whether you’re here for a quick bite or a slow evening chat, Shader
+                    Thikana welcomes you with heart.
+                </p>
+            </div>
+        </div>
+    </div> -->
     <!-- Cards  -->
     <div id="foods" class="container-fluid menu-card mt-5">
-
         <div class="container">
             <div class="row g-4 pb-4">
-                <div class="col-12 col-sm-3 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="card">
                         <img src="assets/Biryani.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -141,11 +165,11 @@
                                 to
                                 additional content. This content is a little bit longer.</p>
                         </div>
-                        <div class="btn btn-primary">Order Now</div>
+                        <button type="button" class="btn  button-sty ">Order Now</button>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-3 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="card">
                         <img src="assets/Biryani.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -154,11 +178,11 @@
                                 to
                                 additional content. This content is a little bit longer.</p>
                         </div>
-                        <div class="btn btn-primary">Order Now</div>
+                        <button type="button" class="btn  button-sty ">Order Now</button>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-3 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="card">
                         <img src="assets/Biryani.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -167,11 +191,11 @@
                                 to
                                 additional content. This content is a little bit longer.</p>
                         </div>
-                        <div class="btn btn-primary">Order Now</div>
+                        <button type="button" class="btn  button-sty ">Order Now</button>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-3 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="card">
                         <img src="assets/Biryani.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -180,11 +204,11 @@
                                 to
                                 additional content. This content is a little bit longer.</p>
                         </div>
-                        <div class="btn btn-primary">Order Now</div>
+                        <button type="button" class="btn  button-sty ">Order Now</button>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-3 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="card">
                         <img src="assets/Biryani.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -193,11 +217,11 @@
                                 to
                                 additional content. This content is a little bit longer.</p>
                         </div>
-                        <div class="btn btn-primary">Order Now</div>
+                        <button type="button" class="btn  button-sty ">Order Now</button>
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-3 col-md-6 col-lg-4">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
                     <div class="card">
                         <img src="assets/Biryani.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -206,7 +230,7 @@
                                 to
                                 additional content. This content is a little bit longer.</p>
                         </div>
-                        <div class="btn btn-primary">Order Now</div>
+                        <button type="button" class="btn  button-sty ">Order Now</button>
                     </div>
                 </div>
 
@@ -294,6 +318,53 @@
         </div>
     </div>
 
+    <!-- <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div> -->
+
+    <!-- contact  -->
+    <div id="contact-us" class="container-fluid menu-card  my-5">
+        <div class="container p-5">
+            <div class="row grid-container">
+                <!-- Left side: contact info -->
+                <div class="col-12 col-md-6  ">
+                    <h2 class="contact-text ">Contact Us</h2>
+                    <p class="fs-5">We’re always happy to connect with our guests!</p>
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-2"><strong>📍 Address:</strong> 123 Food Street, Bogura</li>
+                        <li class="mb-2"><strong>📞 Phone:</strong> +880 1234-567890</li>
+                        <li class="mb-2"><strong>📧 Email:</strong> contact@shaderthikana.com</li>
+                        <li class="mb-2"><strong>🕒 Hours:</strong> 12 PM – 11 PM</li>
+                    </ul>
+                </div>
+
+                <!-- Right side: form -->
+                <div class="col-12 col-md-6  ">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4"
+                                placeholder="Type your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn button-sty text-uppercase">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class=" text-white py-4">
         <div class="container text-center">
             <h5 class="mb-2">Follow Us</h5>
@@ -316,15 +387,17 @@
 
     <script>
         const navbar = document.getElementById("mainNavbar");
-        const hambarger = document.getElementById("hambarger")
-
+        const hambarger = document.getElementById("hambarger");
+        const dropdown = document.getElementById("custom-dropdown-menu");
         window.addEventListener("scroll", function () {
             if (window.scrollY > 100) {
                 navbar.classList.add("navbar-scrolled");
                 hambarger.classList.add("hambarger");
+                dropdown.classList.add("navbar-scrolled");
             } else {
                 navbar.classList.remove("navbar-scrolled");
                 hambarger.classList.remove("hambarger");
+                dropdown.classList.remove("navbar-scrolled");
             }
         });
     </script>
