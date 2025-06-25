@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 
-
 /* all style  */
-
-
 
 /* header  */
 .logo {
@@ -121,15 +118,19 @@
 }
 .grid-container {
   align-items: center;
-
 }
 .about-img {
   width: 100%;
   border-radius: 8px;
- box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   /* aspect-ratio: 16/9; */
 }
 
+@media (max-width: 576px) {
+  .about-content {
+    margin: 0 !important;
+  }
+}
 .about-heading {
   font-family: "Playfair Display SC";
   color: #ff5722;
@@ -153,7 +154,6 @@
 .accordion-button:not(.collapsed) {
   color: #ff5722 !important;
 }
-
 
 /* contact  */
 
